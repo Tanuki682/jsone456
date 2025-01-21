@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image";
 
 const menus = [
     {name: "home",path: "#"},
@@ -13,7 +14,7 @@ export default function Navbar() {
     return (
         <div className="w-full sticky top-0 flex justify-between bg-gray-400">
             <div>
-                Logo
+                <Image src={"/logo.png"} width={100} height={100 } alt={""}></Image>
             </div>
             <div>
             <ul className="flex gap-x-6">
